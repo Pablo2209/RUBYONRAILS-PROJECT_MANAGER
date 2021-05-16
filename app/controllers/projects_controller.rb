@@ -7,7 +7,7 @@ class ProjectsController < ApplicationController
 
   def create
     /Se pasa la base de datos de Projects a la variable de instancia/
-    @projects = Project.create(name: params[:name], description: params[:description], start_date: params[:start_date], end_date: params[:end_date])
+    @projects = Project.create(name: params[:name], description: params[:description], start_date: params[:start_date], end_date: params[:end_date], estadopr:params[:estadopr] )
   end
 
   def dashboard

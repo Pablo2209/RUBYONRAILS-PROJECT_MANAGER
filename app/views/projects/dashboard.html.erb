@@ -1,7 +1,8 @@
 <nav class="navbar navbar-light bg-light justify-content-between">
     <a class="navbar-brand">LISTA DE PROYECTOS </a>
         <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="title" >
+            <!--Recordar cambiar en el imput el valor de name, este corresponde al valor que buscarà Search-->
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="name" >
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
 </nav>
@@ -13,6 +14,7 @@
             <th>DESCRIPCION</th>
             <th>FECHA DE INICIO</th>
             <th>FECHA DE TERMINO</th>
+            <th>ESTADO DEL PROYECTO</th>
         </tr>
     </thead>
     <tbody>
@@ -22,6 +24,7 @@
                 <td><%= post.description %></td>
                 <td><%= post.start_date %></td>
                 <td><%= post.end_date %></td>
+                <td><%= post.estadopr %></td>
             </tr> 
         <% end %>
     </tbody>

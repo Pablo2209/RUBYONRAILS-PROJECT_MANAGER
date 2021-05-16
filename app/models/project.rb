@@ -1,6 +1,6 @@
 class Project < ApplicationRecord
     /validar los campos/ 
-    validates :name, :description, :start_date, :end_date, presence: true
+    validates :name, :description, :estadopr, presence: true
 
     /Eliminar cierta parabra que no queramos/
     /before_save :replace_word
